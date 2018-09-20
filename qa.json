@@ -1,0 +1,22 @@
+[
+    {
+    "question" : "Is today Sunday?",
+    "good" : "0"
+    },
+    {
+    "question" : "7 more than 9?",
+    "good" : "0"
+    },
+    {
+    "question" : "Is Jon Snow King of The North?",
+    "good" : "1"
+    },
+    {
+    "question" : "Did Light dead at the end of 'Death Note'?",
+    "good" : "1"
+    },
+    {
+    "question" : "The Hodor saved Bran, didn't he?",
+    "good" : "1"
+    }
+ ]
