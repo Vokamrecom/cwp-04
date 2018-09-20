@@ -13,17 +13,18 @@ client.setEncoding('utf-8');
 
 client.connect(port, function() {
     client.write(startString);
-    console.log("Connected");
 });
 
 client.on("data", function(data) {
     if(data === good) {
+        console.log("Connected");
         directories.forEach((value) => {
             ReadFilesInDirectory(value);
         });
         sendFilesToServer();
     }
     if(data === bad) {
+        console.log("Not connected");
         client.destroy();
     }
     if (data === "ФАЙЛ ПРИНЯЛ" && files.length !== 0) {
